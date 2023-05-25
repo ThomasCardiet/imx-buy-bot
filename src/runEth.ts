@@ -115,9 +115,7 @@ const provider = new AlchemyProvider(
             console.log(error.message);
           });
       } else {
-        console.log(
-          new Date().toLocaleString() + ' --- Nothing to buy in ETH TEST'
-        );
+        console.log(new Date().toLocaleString() + ' --- Nothing to buy in ETH');
       }
     })
     .catch((error) => {
