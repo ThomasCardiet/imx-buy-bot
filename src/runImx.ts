@@ -25,6 +25,7 @@ const provider = new AlchemyProvider('mainnet', '0BZjuaH8NIoewLDSzZRTiRPav7IhD8r
         .then(response => {
             let result = response.data.result
 
+            // @ts-ignore
             if (result === []) {
                 console.log(new Date().toLocaleString() + 'Any result in IMX')
 
