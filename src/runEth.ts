@@ -38,7 +38,7 @@ const provider = new AlchemyProvider(
 
       // @ts-ignore
       if (result === []) {
-        console.log(new Date().toLocaleString() + 'Any result in ETH');
+        console.log(new Date().toLocaleString() + 'Any result in ETH TEST');
 
         process.exit(0);
       }
