@@ -16,4 +16,4 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          script: cd imx-buy-bot/ && git pull origin master && pm2 delete "buy-eth" && pm2 delete "buy-imx" && pm2 delete "buy-usdc" && pm2 start "yarn -s buy-eth >> ../logs/buy-eth.log" && pm2 start "yarn -s buy-imx >> ../logs/buy-imx.log" && pm2 start "yarn -s buy-usdc >> ../logs/buy-usdc.log"
+          script: cd imx-buy-bot/ && git pull origin master && pm2 restart all
